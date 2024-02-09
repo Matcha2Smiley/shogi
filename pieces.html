@@ -32,8 +32,23 @@
                     [1, 1, 1, 0, 1, 0, 1, 1, 0, 0], // 14:成香
                     [1, 1, 1, 0, 1, 0, 1, 1, 0, 0]  // 12:と金
                 ];
-                var fillcolor = ["white", "LightPink", "fuchsia"]; //マスの色
-                var psize = 20; //マスのピクセル数
+                
+                
+
+                //駒の初期配置
+                var setup = [
+                    [ 7, 7, 7, 7, 7, 7, 7, 7, 7],
+                    [-1, 2,-1,-1,-1,-1,-1, 1,-1],
+                    [ 6, 5, 4, 3, 0, 3, 4 ,5, 6]
+                ]
+
+                var fontcolor = ["black", "maroon"]; //文字色
+                var boxcolor = ["LimeGreen", "gray", "blue", "red"]; //マスの枠線の色
+                var fillcolor = ["LimeGreen", "Khaki", "white", "LightPink"]; //マス内部の色
+                var psize = 32; //マスのピクセル数
+                var board = []; //将棋盤ばっふぁ
+                var bw = 19, bh = 11; //将棋盤バッファのサイズ
+
 
                 //初期化処理
                 function init(){
